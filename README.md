@@ -1,26 +1,33 @@
 # Green to Amber: Rush at Six
 
-![Green to Amber: Rush at Six](screenshots/1-start.jpg)
+[![Competition](https://make.fun/badge/gta6-01.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![Rank](https://make.fun/badge/gta6-01/sasam44/green-to-amber-rush-at-six/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![Reward](https://make.fun/badge/gta6-01/sasam44/green-to-amber-rush-at-six/reward.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
-An offline 3D free-route city racing game built with Three.js and procedural Web Audio — zero build step, zero external network requests.
+An offline 3D free-route city racing game set in **Sunset Harbor**.
 
-At 6:00 PM in Sunset Harbor, a yellow taxi pulls up outside **Garage 06** and flips its roof sign to **BEAT 01:15**. Pick any route through the city's avenues, cobblestone shortcut alleys, and the **Citrus Plaza** roundabout to clear all **6 Coral Traffic-Light Gates** in order and cross the finish arch before the `01:15.00` taxi meter runs out.
+At 6:00 PM outside **Garage 06**, a **Yellow Taxi** flips its roof sign to **`BEAT 01:15`**. Carve your own route through golden-hour avenues, tight **cobblestone alleys**, and the **Citrus Plaza** roundabout to clear all **6 Coral Traffic-Light Gates** in order before the taxi meter expires—backed by an original procedural **Sunset Funk-Synth** Web Audio soundtrack.
 
 ## Screenshots
 
-| Race Gameplay | Patrol Chase | Finish Scoreboard |
-| :---: | :---: | :---: |
-| ![Gameplay](screenshots/2-play.jpg) | ![Patrol Chase](screenshots/3-chase.jpg) | ![Finish](screenshots/4-end.jpg) |
+| Start Screen | Racing Sunset Harbor |
+| :---: | :---: |
+| ![Start Screen](screenshots/1-start.jpg) | ![Racing Sunset Harbor](screenshots/2-play.jpg) |
 
-## How to Play
+| Patrol Chase | Finish & Results |
+| :---: | :---: |
+| ![Patrol Chase](screenshots/3-chase.jpg) | ![Finish & Results](screenshots/4-end.jpg) |
 
-### Traffic-Light Gate Rules
-Each of the 6 Coral Gates cycles live through Green, Amber, and Red signals:
-- **GREEN**: Shave **-1.0s** off your final time.
+## Traffic-Light Gate Rules
+
+Each of the **6 Coral Traffic-Light Gates** cycles live through Green, Amber, and Red signals:
+
+- **GREEN**: Shave **`-1.0s`** off your final time.
 - **AMBER**: Valid checkpoint — no bonus, no heat.
-- **RED**: Valid checkpoint, but adds **+1 HEAT**. Running **2 Red Lights** dispatches a **Police Patrol Car** to chase and ram you.
+- **RED**: Valid checkpoint, but adds **`+1 HEAT`**. Running **2 Red Lights** triggers a **Patrol Chase** as a police cruiser hunts and rams you.
 
-### Controls
+## Controls
+
 - `W` / `↑` — Accelerate
 - `S` / `↓` — Brake / Reverse
 - `A` / `D` or `←` / `→` — Steer
@@ -28,27 +35,25 @@ Each of the 6 Coral Gates cycles live through Green, Amber, and Red signals:
 - `M` / `Tab` — Toggle Full City Route Map
 - `R` — Quick Retry Race
 - `F` — Free Roam Mode (explore Sunset Harbor at your own pace)
-- `N` — Toggle Original Sunset Funk-Synth Music On/Off (plus on-screen volume slider)
+- `N` — Toggle Sunset Funk-Synth Music On/Off (plus on-screen volume slider)
 - `P` / `Esc` — Pause / Resume
 
-## Running Offline Locally
+## Run it
 
-Requires Node.js 22+ (no install, no build step, 100% offline):
+Requires Node.js 22+ (no install, no build step, zero network requests):
 
 ```bash
 node serve.ts
 ```
 
-Then open `http://localhost:8080` in a desktop browser and click **START RACE** (or press `Space`) to launch the race and start the original procedural Web Audio soundtrack.
+Open `http://localhost:8080` in a desktop browser and click **START RACE** (or press `Space`) to launch the race and start the procedural Web Audio soundtrack.
 
-## Packaging & Validation
-
-To validate the offline game bundle and generate `game/`, `screenshots/`, and `dossier.json` into a local output directory:
+To package and validate the offline bundle (`game/`, `screenshots/`, and `dossier.json`) into a local output folder:
 
 ```bash
 MAKEFUN_OUTPUT_DIR=./out node main.ts
 ```
 
-## License
+---
 
-See [LICENSE](LICENSE).
+Built for the make.fun competition — explore more at [make.fun](https://make.fun/?ref=4vfb3cp2&utm_source=github&utm_medium=readme&utm_campaign=gta6-01).
